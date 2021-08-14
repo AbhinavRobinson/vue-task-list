@@ -19,22 +19,23 @@ export default class Home extends Vue {}
 </script>
 
 <style lang="less" scoped>
-@padding: 20px;
+@import "../styles.less";
 .home {
   display: grid;
   place-items: center;
   .container {
+    background-color: @light;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: calc(400px - @padding * 2);
+    width: calc(@width - @padding * 2);
     padding: @padding;
-    border: 1px solid #e5e5e5;
+    border: 1px solid rgba(@dark, 0.15);
     border-radius: calc(@padding / 2);
     transition-duration: 300ms;
     &:hover {
-      box-shadow: 0 5px 10px rgb(235, 235, 235);
+      box-shadow: 0 5px 10px rgba(@dark, 0.1);
     }
   }
 }

@@ -7,23 +7,22 @@
 </template>
 
 <style lang="less">
+@import "./styles.less";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: @dark;
 }
-
 #nav {
-  padding: 30px;
-
+  padding: @padding * 2;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: @dark;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: @primary;
     }
   }
 }

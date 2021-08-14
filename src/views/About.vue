@@ -9,17 +9,18 @@
 </template>
 
 <style lang="less" scoped>
+@import "../styles.less";
 span {
-  color: #42b983;
+  color: @primary;
   font-weight: bold;
 }
 a {
   font-weight: bold;
   &:visited {
-    color: #42b983;
+    color: @primary;
   }
   &:active {
-    color: #217750;
+    color: @primary-dark;
   }
 }
 </style>
