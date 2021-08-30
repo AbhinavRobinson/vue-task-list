@@ -1,21 +1,10 @@
-<template>
-  <div class="bar">
-    <header>Task Tracker</header>
-    <button>Add Task</button>
-  </div>
-</template>
+<script lang="ts" setup></script>
 
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-@Options({
-  computed: {
-    tasks: function () {
-      return this.$store.state.tasks;
-    },
-  },
-})
-export default class Header extends Vue {}
-</script>
+<template lang="pug">
+.bar
+  header Task Tracker
+  button Add Task
+</template>
 
 <style lang="less" scoped>
 @import "../styles.less";
@@ -28,6 +17,9 @@ export default class Header extends Vue {}
   header {
     font-weight: bold;
     font-size: larger;
+    & .hovering {
+      color: @primary;
+    }
   }
   button {
     background-color: white;

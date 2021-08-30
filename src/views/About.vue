@@ -1,11 +1,11 @@
-<template>
-  <div class="about">
-    My first vue app.<br />
-    Made with <span>&lt;3</span> by
-    <a href="http://github.com/abhinavrobinson" class="default"
-      >Abhinav Robinson</a
-    >
-  </div>
+<template lang="pug">
+.about My first vue app.
+  br
+  | !{'Made with '}
+  span !{'&lt;3 '}
+  | !{'by '}
+  a.default(href="http://github.com/abhinavrobinson")
+    | Abhinav Robinson
 </template>
 
 <style lang="less" scoped>

@@ -6,6 +6,7 @@ export default createStore({
     tasks: [{ title: "INITIAL", time: "8:00PM" }] as {
       [key: string]: string;
     }[],
+    hovering: false,
   },
   mutations: {
     addTask(state, task: string) {

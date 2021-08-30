@@ -1,22 +1,10 @@
-<template>
-  <div class="home">
-    <div class="container">
-      <Header />
-    </div>
-  </div>
+<script lang="ts" setup></script>
+
+<template lang="pug">
+.home
+  .container
+    Header
 </template>
-
-<script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import Header from "@/components/Header.vue";
-
-@Options({
-  components: {
-    Header,
-  },
-})
-export default class Home extends Vue {}
-</script>
 
 <style lang="less" scoped>
 @import "../styles.less";
