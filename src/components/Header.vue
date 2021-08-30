@@ -1,9 +1,10 @@
 <script lang="ts" setup></script>
 
-<template lang="pug">
-.bar
-  header Task Tracker
-  button Add Task
+<template>
+  <div class="bar">
+    <header>Task Tracker</header>
+    <button>Add Task</button>
+  </div>
 </template>
 
 <style lang="less" scoped>

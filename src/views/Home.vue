@@ -1,9 +1,11 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import Header from "../components/Header.vue";
+</script>
 
-<template lang="pug">
-.home
-  .container
-    Header
+<template>
+  <div class="home">
+    <div class="container"><Header /></div>
+  </div>
 </template>
 
 <style lang="less" scoped>

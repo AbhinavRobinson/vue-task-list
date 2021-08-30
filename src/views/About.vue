@@ -1,26 +1,27 @@
-<template lang="pug">
-.about My first vue app.
-  br
-  | !{'Made with '}
-  span !{'&lt;3 '}
-  | !{'by '}
-  a.default(href="http://github.com/abhinavrobinson")
-    | Abhinav Robinson
+<template>
+  <div class="about">
+    My first vue app.<br />Made with <span>&lt;3</span> by
+    <a class="default" href="http://github.com/abhinavrobinson"
+      >Abhinav Robinson</a
+    >
+  </div>
 </template>
 
 <style lang="less" scoped>
 @import "../styles.less";
-span {
-  color: @primary;
-  font-weight: bold;
-}
-a {
-  font-weight: bold;
-  &:visited {
+.about {
+  span {
     color: @primary;
+    font-weight: bold;
   }
-  &:active {
-    color: @primary-dark;
+  a {
+    font-weight: bold;
+    &:visited {
+      color: @primary;
+    }
+    &:active {
+      color: @primary-dark;
+    }
   }
 }
 </style>
